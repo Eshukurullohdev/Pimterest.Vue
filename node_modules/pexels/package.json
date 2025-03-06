@@ -1,0 +1,41 @@
+{
+  "name": "pexels",
+  "version": "1.4.0",
+  "description": "The official Pexels API Javascript client.",
+  "homepage": "https://github.com/pexels/pexels-javascript",
+  "author": "Joey Farina",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pexels/pexels-javascript.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pexels/pexels-javascript/issues"
+  },
+  "source": "src/main.ts",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "module": "dist/main.module.js",
+  "unpkg": "dist/main.umd.js",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "prepare": "yarn build",
+    "postversion": "git push && git push --tags",
+    "build": "microbundle",
+    "dev": "microbundle watch",
+    "test": "jest"
+  },
+  "dependencies": {
+    "isomorphic-fetch": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "jest": "^25.5.1",
+    "microbundle": "^0.12.0",
+    "prettier": "^2.0.5",
+    "ts-jest": "^25.4.0",
+    "typescript": "^3.8.3"
+  }
+}

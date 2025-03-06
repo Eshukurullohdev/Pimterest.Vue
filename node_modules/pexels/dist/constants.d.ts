@@ -1,0 +1,3 @@
+export declare const photoBaseUrl = "https://api.pexels.com/v1/";
+export declare const videoBaseUrl = "https://api.pexels.com/videos/";
+export declare const collectionBaseUrl = "https://api.pexels.com/v1/collections/";
