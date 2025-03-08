@@ -3,7 +3,7 @@
     <div class="w-full mt-24 flex justify-center items-center">
       <RouterLink
         to="/"
-        class="w-[50px] h-[50px] rounded-full flex justify-center items-center absolute top-[120px] left-[230px] cursor-pointer hover:bg-gray-200"
+        class="w-[50px] h-[50px] rounded-full flex justify-center items-center absolute top-[120px] left-[150px] cursor-pointer hover:bg-gray-200"
       >
         <i class="fa-solid fa-arrow-left text-2xl"></i>
       </RouterLink>

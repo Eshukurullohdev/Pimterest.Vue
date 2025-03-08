@@ -74,7 +74,7 @@
           </RouterLink>
         </form>
         <div class="flex items-center">
-          <RouterLink to="/accaunt"
+          <RouterLink to="/account"
             class="flex items-center justify-center w-[50px] h-[50px] hover:bg-gray-200 hover:rounded-[10px] ml-[10px] cursor-pointer"
           >
             <img
