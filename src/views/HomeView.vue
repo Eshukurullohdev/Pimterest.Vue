@@ -58,18 +58,19 @@ const APIKEY = ref('R3h8TtlSNwEZ6POIiAEUUzTnAo3TY3gOziXW59dbORNPnb31MFdftUkF')
 
 const client = createClient(APIKEY.value)
 
-// 🟢 Reactive list yaratamiz
+
 const items = ref([])
 const images = ref([])
 const showLoading = ref(true)
 
-// ekran o'lchamini olish
+
 
 const screenWidth = ref(window.innerWidth)
 
 const updateScreenWidth = () => {
   screenWidth.value = window.innerWidth
 }
+
 
 const gridTemplateColumn = computed(() => {
   if (screenWidth.value > 4000) return 'repeat(20, 1fr)'
@@ -86,14 +87,14 @@ const fetchImages = async () => {
   })
 }
 
-// 🔵 Component yuklanganda itemlar hosil bo'ladi
+
 onMounted(() => {
   for (let x = 0; x < 100; x++) {
     images.value += x
   }
   setTimeout(() => {
     images.value = []
-    fetchImages() // 100ta rasmni olish funskiyasi
+    fetchImages() 
     showLoading.value = false
   }, 3000)
   updateScreenWidth()

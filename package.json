@@ -15,7 +15,7 @@
   "dependencies": {
     "pexels": "^1.4.0",
     "pinia": "^2.3.1",
-    "require": "^2.4.20",
+    "require": "^0.4.4",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
   },
